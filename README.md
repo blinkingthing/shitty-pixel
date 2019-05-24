@@ -28,14 +28,6 @@ I2C Address | Byte | Data
 0x50 | 0x02| SAO Type ID
 0x50 | 0x03| Data
 
-###### EEPROM Bus Pirate Example
-Bus Pirate uses 8 bit address (7 bit address plus eighth R/W bit) - 0x42 = 0b1000010 , 0x85 = 0b1000010**1** 
-```
-I2C>[0x85 [0x00 r]] #returns DC Year
-I2C>[0x85 [0x01 r]] #returns Maker ID
-I2C>[0x85 [0x02 r]] #returns SAO Type ID
-I2C>[0x85 [0x03 r]] #returns Data
-```
 ###### EEPROM Raspberry Pi SAO Dev Board Example
 i2cget -y 1 7_BIT_ADDRESS BYTE_TO_READ
 ```
