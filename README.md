@@ -69,7 +69,7 @@ i2cset -y 1 0x42 0x00 0x00 #LEDs off
 i2cset -y 1 0x42 0x00 0x03 #default Animation
 ```
 
-7 bit Address | Register | Data | Command
+7 bit Address | Register | Byte | Command
 --- | --- | --- | ---
 0x42 | 0x00 | 0x00 | LEDs OFF
 0x42 | 0x00 | 0x01 | LEDs ON
