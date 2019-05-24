@@ -1,5 +1,5 @@
 # shitty_pixel
-Repository for the shitty pixel SAO
+This is mostly complete. I will add complete documentaion that includes puzzle spoilers after Defcon. 
 
 ## I2C ADDRESSES
 
