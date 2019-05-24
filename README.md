@@ -17,7 +17,7 @@ I2C EEPROM Format adopted from ANDnXOR SAO Reference Design
 DC Year | Maker ID | SAO Type ID | Data
 
 * DC Year: Use 0x1B for DC27
-* Maker ID: Unique identifier for SAO maker, I'm using **0x42**.
+* Maker ID: Unique identifier for SAO maker, I'm using 0x2A.
 * SAO Type ID: Unique identifier assigned by the maker for the SAO
 * Data: Arbitrary data parseable by anything recognizing DC, Maker, and SAO values
 
