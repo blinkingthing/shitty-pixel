@@ -56,8 +56,17 @@ i2cset -y 1 0x42 0x00 0x03 #default Animation
 0x42 | 0x03 | 0x7F | Green LED Max Brightness (0x00-0xFF): 50% BRIGHTNESS
 0x42 | 0x04 | 0x00 | Blue LED Max Brightness (0x00-0xFF): 0% BRIGHTNESS
 0x42 | 0x05 | 0x7F | Green LED Max Brightness (0x00-0xFF): 50% BRIGHTNESS
-0x42 | 0x06 | 0x52 | Save Current State to EEPROM (persists through power cycle)
-0x42 | 0x06 | 0x57 | Recall State from EEPROM
+0x42 | 0x06 | 0x52 | Save Current LED State to EEPROM (persists through power cycle)
+0x42 | 0x06 | 0x57 | Recall LED State from EEPROM
+--- | --- | --- | ---
+0x50 | 0x00 | --- | DC Year
+0x50 | 0x01| --- | Maker ID
+0x50 | 0x02| --- | SAO Type ID
 
 ## SECRETS 
-There's a bit of a crypto challenge included. Did you save the packaging the SAO came in? DM me @blinkingthing for hints if need be. 
+There's a bit of a crypto challenge included. Did you save the packaging the SAO came in? DM me @blinkingthing for hints if need be.
+
+## CREDIT
+Based on [ATTiny-i2c-RGB](https://github.com/G42makes/ATTiny-i2c-RGB)
+and
+[******]
