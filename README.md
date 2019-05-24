@@ -26,6 +26,7 @@ DC Year | Maker ID | SAO Type ID | Data
 The 3 LEDs are contorlled via I2C write commands. I was able to successfully send these commands via a Bus Pirate and the SAO v1.69bis Pi Developmemt Platform. No guarantee that any badge will be able to send these commands. 
 
 #### Bus Pirate Example
+Bus Pirate uses 8 bit address (7 bit address plus eighth R/W bit) - 0x42 = 0b1000010 , 0x84 = 0b1000010**0** 
 ```
 I2C>[0x84 0x00 0x01] #turns LEDs on 
 I2C>[0x84 0x00 0x00] #turns LEDs off
