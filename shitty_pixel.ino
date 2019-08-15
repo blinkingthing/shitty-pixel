@@ -4,8 +4,8 @@
 //With a git submodule here, we can ensure we have the exact version we want without including everything in our code
 // https://github.com/rambo/TinyWire
 //  A lot is from the examples there - why re-invent the wheel?
-//#define I2C_SLAVE_ADDRESS 0x2A // the 7-bit address: 42 in decimal. Life the universe and everything, ya know?
-#define I2C_SLAVE_ADDRESS 0x42 // the 7-bit address: 2A 42 in decimal. Life the universe and everything, ya know?
+
+#define I2C_SLAVE_ADDRESS 0x42 // the 7-bit address: 0x42 - the answer to life the universe and everything
 
 #include <TinyWireS.h>
 // The default buffer size, Can't recall the scope of defines right now
@@ -62,7 +62,6 @@ volatile uint8_t i2c_regs[] =
 volatile byte reg_position = 0;
 const byte reg_size = sizeof(i2c_regs);
 
-//char flag[] = "68747470733a2f2f656e2e77696b6970656469612e6f72672f77696b692f46726564657269635f432e5f42696c6c696e67736c6579";
 char flag2[] = "492077617320626f726e20696e20313936352e204d6f726520696e666f206f6e206d79206d616b6572206174203078353020307830332d30783644";
 byte mask = 1;
 
